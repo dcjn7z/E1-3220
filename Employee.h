@@ -15,6 +15,7 @@ class Employee{
         Employee(); //Default Constructor
         Employee(Employee const& object);
         Employee(std::string,std::string, std::string, double);
+        Employee(std::string,std::string,double);
         std::string get_name() const;
         std::string get_lastname()const;
         std::string get_employmentType() const;

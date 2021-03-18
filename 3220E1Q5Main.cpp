@@ -1,3 +1,10 @@
+#include "Employee.h"
+#include "Company.h"
+#include "PartTimeEmployee.h"
+#include "FullTimeEmployee.h"
+
+using namespace std;
+
 int main() 
 {
 	Company watermelon;

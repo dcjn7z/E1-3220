@@ -9,6 +9,7 @@ class PartTimeEmployee: public Employee{
    
     public :
         PartTimeEmployee(std::string name,std::string str1, double salary);
+    	PartTimeEmployee(std::string name, double salary);
         PartTimeEmployee(PartTimeEmployee const&);
         ~PartTimeEmployee();
 

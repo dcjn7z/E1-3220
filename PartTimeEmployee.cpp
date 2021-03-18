@@ -6,6 +6,12 @@ PartTimeEmployee::PartTimeEmployee(std::string name, std::string str1, double sa
 	
 }
 
+PartTimeEmployee::PartTimeEmployee(std::string name, double salary):Employee(name, "Part Time",salary)
+{
+	std::cout << "Part Time Employee Parameterized Constructor 2" << std::endl;
+	
+}
+
 PartTimeEmployee::PartTimeEmployee(PartTimeEmployee const& partTime)
 {
 	Employee(partTime.get_name(), partTime.get_lastname(),"Part Time", partTime.getSalary());

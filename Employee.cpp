@@ -4,21 +4,28 @@ Employee::Employee() {std::cout << "Employee Default Constructor" << std::endl;}
 Employee::Employee(Employee const& object)
 {
 	name=object.name;
-	lastname_=object.lastname_;
+	lastname=object.lastname;
 	employmentType=object.employmentType;
 	salary=object.salary;
 	std::cout << "Employee Copy Constructor" << std::endl;
 }
 
-Employee::Employee(std::string str1, std::string str2)
+Employee::Employee(std::string str1, std::string str2, std::string str3, double sal)
 {
 	name= str1;
-	lastname_= str2;
-	employmentType= "";
-	salary= "";
-	std::cout << "Employee Parameterized Constructor" << std::endl;
+	lastname= str2;
+	employmentType= str3;
+	salary = sal;
+	std::cout << "Employee Parameterized Constructor 1" << std::endl;
 }
 
+Employee::Employee(std::string str1, std::string str2, double sal)
+{
+	name= str1;
+	employmentType= str2;
+	salary= sal;
+	std::cout << "Employee Parameterized Constructor 2" << std::endl;
+}
 std::string Employee::get_name() const
 {
 	return this->name;
